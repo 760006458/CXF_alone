@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * xuan
  * 2017/12/27
  */
-@XmlRootElement(name = "car")
+@XmlRootElement(name = "car")   //注：哪怕客户端输送和接收的都是json，此处也需要加此注解
 public class Car {
     private Integer id;
     private Double money;

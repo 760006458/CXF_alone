@@ -14,7 +14,8 @@ import org.apache.cxf.jaxrs.JAXRSServerFactoryBean;
 public class MyPublish {
     public static void main(String[] args) {
         JAXRSServerFactoryBean factoryBean = new JAXRSServerFactoryBean();
-        factoryBean.setResourceClasses(User.class, Car.class);
+        //发现下面这行代码没意义
+//        factoryBean.setResourceClasses(User.class, Car.class);
         factoryBean.setServiceBean(new UserServiceImpl());
         factoryBean.setAddress("http://localhost:8081");
 
