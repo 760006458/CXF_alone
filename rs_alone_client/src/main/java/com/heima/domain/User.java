@@ -7,7 +7,7 @@ import java.util.List;
  * xuan
  * 2017/12/27
  */
-@XmlRootElement(name = "user")
+@XmlRootElement(name = "user")  //注：哪怕客户端输送和接收的都是json，此处也需要加此注解
 public class User {
     private Integer id;
     private String name;
